@@ -1,0 +1,22 @@
+.login {
+  height: 90vh;
+  width: 100%;
+  background: red;
+  position: relative;
+  h1 {
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  &_container {
+    height: 75%;
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    transform: translate(0, -25%);
+
+    background: blue;
+  }
+}

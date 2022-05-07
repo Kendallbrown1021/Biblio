@@ -1,0 +1,99 @@
+$text-primary: #414833;
+$text-secondary: #d4a373;
+
+@import "../../App.scss";
+
+.home_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 2rem;
+  @media screen and (min-width: $medium) {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  @media screen and (min-width: $large) {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .home_container-content {
+    height: 55%;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    color: $text-primary;
+    @media screen and(min-width:$medium) {
+      height: 45%;
+      font-size: 2.2rem;
+    }
+
+    .home_container-new {
+      height: 90%;
+      width: 100%;
+
+      @media screen and (min-width: $medium) {
+        height: 100%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media screen and (min-width: $large) {
+        height: 100%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .home_content-special {
+      font-size: 2.4rem;
+      color: $text-secondary;
+      @media screen and(min-width:$medium) {
+        font-size: 2.7rem;
+      }
+    }
+  }
+  .home_image-container {
+    height: 35%;
+    width: 100%;
+    background-image: url("../../assets/landing_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: $medium) {
+      height: 100%;
+      width: 45%;
+    }
+    @media screen and (min-width: $large) {
+      height: 100%;
+    }
+    .home_image-filter {
+      background-color: rgba(65, 72, 51, 0.7);
+      position: relative;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+    }
+  }
+
+  .home_cta {
+    width: 10rem;
+    height: 3rem;
+    background-color: $text-primary;
+    border: none;
+    border-radius: 0.2rem;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+    .home_cta-link {
+      color: $text-secondary;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+  }
+}

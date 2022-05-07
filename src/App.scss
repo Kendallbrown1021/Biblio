@@ -1,0 +1,21 @@
+$medium: 768px;
+$large: 1024px;
+
+body {
+  background-color: #fefae0;
+  font-size: 52.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-around;
+  font-size: 1.1rem;
+  z-index: 4;
+}
